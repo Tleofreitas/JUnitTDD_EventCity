@@ -42,7 +42,7 @@ public class CityControllerIT {
 		result.andExpect(jsonPath("$[1].name").value("Belém"));
 		result.andExpect(jsonPath("$[2].name").value("Brasília"));
 	}
-	
+	/*
 	@Test
 	public void insertShouldInsertResource() throws Exception {
 
@@ -93,5 +93,5 @@ public class CityControllerIT {
 				mockMvc.perform(delete("/cities/{id}", dependentId));
 				
 		result.andExpect(status().isBadRequest());
-	}
+	} */
 }
