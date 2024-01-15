@@ -71,7 +71,7 @@ public class CityControllerIT {
 		
 		result.andExpect(status().isNoContent());
 	}
-	/*
+	
 	@Test
 	public void deleteShouldReturnNotFoundWhenNonExistingId() throws Exception {		
 
@@ -82,7 +82,7 @@ public class CityControllerIT {
 
 		result.andExpect(status().isNotFound());
 	}
-	
+	/*
 	@Test
 	@Transactional(propagation = Propagation.SUPPORTS) 
 	public void deleteShouldReturnBadRequestWhenDependentId() throws Exception {		
