@@ -51,7 +51,7 @@ public class EventControllerIT {
 		result.andExpect(jsonPath("$.url").value("https://expoxp.com.br"));
 		result.andExpect(jsonPath("$.cityId").value(7L));
 	}
-
+	
 	@Test
 	public void updateShouldReturnNotFoundWhenIdDoesNotExist() throws Exception {
 
