@@ -82,7 +82,7 @@ public class CityControllerIT {
 
 		result.andExpect(status().isNotFound());
 	}
-	/*
+	
 	@Test
 	@Transactional(propagation = Propagation.SUPPORTS) 
 	public void deleteShouldReturnBadRequestWhenDependentId() throws Exception {		
@@ -93,5 +93,5 @@ public class CityControllerIT {
 				mockMvc.perform(delete("/cities/{id}", dependentId));
 				
 		result.andExpect(status().isBadRequest());
-	} */
+	}
 }
